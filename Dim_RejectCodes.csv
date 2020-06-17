@@ -1,0 +1,22 @@
+DI_RejectCode,DI_RejectReason,DI_RejectDescription
+10,ScrapReasonID is null or not present,Invalid or Bad data 
+20,Product Class is null or not present,Invalid or Bad data 
+30,Reorder point is not equal to 375,Invalid or Bad data 
+40,Days to manufacture is zero,Invalid or Bad data 
+50,invalid data or null values ,Bad data present in the source
+60,ProductSK is  null ,Bad data: Product is not present from the Sales Orders
+70,CustomerSK is null,Bad data: Customer is not present from the Sales Orders
+80,PromotionSK is null,Bad data: Special Offer Id is not present from the Sales Orders
+90,SalesTerritorySK is null,Bad data: Sales territory Id is not present from the sales order
+100,SalesOrderNumber is null,Bad data: Sales OrderNumber is not present from Sales Order
+110,SalesOrderLineNumber is null,Bad data : Sales Order line number is not present from sales order
+120,OrderQuantity is null ,Bad data: Order quantity is not present from Sales order
+130,TotalProductCost is null,Bad data: TotalProductCost is not present from Sales order
+140,SOR_ID,Bad data: SOR_ID not present or generated
+150,ResellerSK is null,Bad data : Reseller is not present from SalesOrder
+160,EmployeeSK is null,Bad data: Employee is not present from Sales Order
+170,EntitySK is null,Bad data: EntitySK is null for Strategy Plan
+172,AccountSK is null,Bad data: AccountSK is null for Strategy Plan
+171,ScenarioSK is null,Bad data: ScenarioSK is null for Strategy Plan
+173,StoreSK is null,Bad data: SctoreSK is null
+174,GeographySK is null,Bad data: GeographySK is null for the Inventory

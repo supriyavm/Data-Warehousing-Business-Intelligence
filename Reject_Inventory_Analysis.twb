@@ -1,0 +1,975 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0818.2120                               -->
+<workbook original-version='18.1' source-build='2019.2.3 (20192.19.0818.2120)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='factinventory_rejects+ (retail_dw_test_2019_01)' inline='true' name='federated.19q9zev0r2ngch1474e431fnhr4h' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.0hq4s4n0e485t81a8sdpw0qfyyjx'>
+            <connection class='mysql' dbname='retail_dw_test_2019_01' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[factinventory_rejects].[InventorySK]' />
+              <expression op='[factinventory].[InventorySK]' />
+            </expression>
+          </clause>
+          <relation connection='mysql.0hq4s4n0e485t81a8sdpw0qfyyjx' name='factinventory_rejects' table='[factinventory_rejects]' type='table' />
+          <relation connection='mysql.0hq4s4n0e485t81a8sdpw0qfyyjx' name='factinventory' table='[factinventory]' type='table' />
+        </relation>
+        <cols>
+          <map key='[Aging (factinventory)]' value='[factinventory].[Aging]' />
+          <map key='[Aging]' value='[factinventory_rejects].[Aging]' />
+          <map key='[Brand_ID]' value='[factinventory_rejects].[Brand_ID]' />
+          <map key='[DI_Create_Date (factinventory)]' value='[factinventory].[DI_Create_Date]' />
+          <map key='[DI_Create_Date]' value='[factinventory_rejects].[DI_Create_Date]' />
+          <map key='[DI_Job_ID (factinventory)]' value='[factinventory].[DI_Job_ID]' />
+          <map key='[DI_Job_ID]' value='[factinventory_rejects].[DI_Job_ID]' />
+          <map key='[DI_Modified_Date (factinventory)]' value='[factinventory].[DI_Modified_Date]' />
+          <map key='[DI_Modified_Date]' value='[factinventory_rejects].[DI_Modified_Date]' />
+          <map key='[DI_Reject_Code]' value='[factinventory_rejects].[DI_Reject_Code]' />
+          <map key='[DaysInStock (factinventory)]' value='[factinventory].[DaysInStock]' />
+          <map key='[DaysInStock]' value='[factinventory_rejects].[DaysInStock]' />
+          <map key='[GeographyID]' value='[factinventory_rejects].[GeographyID]' />
+          <map key='[GeographySK (factinventory)]' value='[factinventory].[GeographySK]' />
+          <map key='[GeographySK]' value='[factinventory_rejects].[GeographySK]' />
+          <map key='[InventoryDate (factinventory)]' value='[factinventory].[InventoryDate]' />
+          <map key='[InventoryDateSK (factinventory)]' value='[factinventory].[InventoryDateSK]' />
+          <map key='[InventoryDateSK]' value='[factinventory_rejects].[InventoryDateSK]' />
+          <map key='[InventoryDate]' value='[factinventory_rejects].[InventoryDate]' />
+          <map key='[InventorySK (factinventory)]' value='[factinventory].[InventorySK]' />
+          <map key='[InventorySK]' value='[factinventory_rejects].[InventorySK]' />
+          <map key='[MaxDayInStock (factinventory)]' value='[factinventory].[MaxDayInStock]' />
+          <map key='[MaxDayInStock]' value='[factinventory_rejects].[MaxDayInStock]' />
+          <map key='[MinDayInStock (factinventory)]' value='[factinventory].[MinDayInStock]' />
+          <map key='[MinDayInStock]' value='[factinventory_rejects].[MinDayInStock]' />
+          <map key='[OnHandQuantity (factinventory)]' value='[factinventory].[OnHandQuantity]' />
+          <map key='[OnHandQuantity]' value='[factinventory_rejects].[OnHandQuantity]' />
+          <map key='[OnOrderQuantity (factinventory)]' value='[factinventory].[OnOrderQuantity]' />
+          <map key='[OnOrderQuantity]' value='[factinventory_rejects].[OnOrderQuantity]' />
+          <map key='[ProductLabel]' value='[factinventory_rejects].[ProductLabel]' />
+          <map key='[ProductSK (factinventory)]' value='[factinventory].[ProductSK]' />
+          <map key='[ProductSK]' value='[factinventory_rejects].[ProductSK]' />
+          <map key='[Product_ID]' value='[factinventory_rejects].[Product_ID]' />
+          <map key='[SOR_ID (factinventory)]' value='[factinventory].[SOR_ID]' />
+          <map key='[SOR_ID]' value='[factinventory_rejects].[SOR_ID]' />
+          <map key='[SOR_LoadDate (factinventory)]' value='[factinventory].[SOR_LoadDate]' />
+          <map key='[SOR_LoadDate]' value='[factinventory_rejects].[SOR_LoadDate]' />
+          <map key='[SOR_UpdateDate (factinventory)]' value='[factinventory].[SOR_UpdateDate]' />
+          <map key='[SOR_UpdateDate]' value='[factinventory_rejects].[SOR_UpdateDate]' />
+          <map key='[SafetyStockQuantity (factinventory)]' value='[factinventory].[SafetyStockQuantity]' />
+          <map key='[SafetyStockQuantity]' value='[factinventory_rejects].[SafetyStockQuantity]' />
+          <map key='[StoreID]' value='[factinventory_rejects].[StoreID]' />
+          <map key='[StoreSK (factinventory)]' value='[factinventory].[StoreSK]' />
+          <map key='[StoreSK]' value='[factinventory_rejects].[StoreSK]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>InventorySK</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[InventorySK]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>InventorySK</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InventoryDateSK</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[InventoryDateSK]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>InventoryDateSK</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InventoryDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[InventoryDate]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>InventoryDate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StoreSK</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[StoreSK]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>StoreSK</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductSK</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[ProductSK]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>ProductSK</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeographySK</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[GeographySK]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>GeographySK</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnHandQuantity</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[OnHandQuantity]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>OnHandQuantity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnOrderQuantity</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[OnOrderQuantity]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>OnOrderQuantity</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SafetyStockQuantity</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[SafetyStockQuantity]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>SafetyStockQuantity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DaysInStock</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[DaysInStock]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>DaysInStock</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MinDayInStock</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[MinDayInStock]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>MinDayInStock</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaxDayInStock</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[MaxDayInStock]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>MaxDayInStock</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aging</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Aging]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>Aging</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DI_Reject_Code</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[DI_Reject_Code]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>DI_Reject_Code</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StoreID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[StoreID]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>StoreID</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductLabel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ProductLabel]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>ProductLabel</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>24</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Brand_ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Brand_ID]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>Brand_ID</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>24</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product_ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product_ID]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>Product_ID</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>24</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeographyID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[GeographyID]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>GeographyID</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOR_ID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[SOR_ID]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>SOR_ID</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOR_LoadDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[SOR_LoadDate]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>SOR_LoadDate</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOR_UpdateDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[SOR_UpdateDate]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>SOR_UpdateDate</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DI_Job_ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DI_Job_ID]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>DI_Job_ID</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DI_Create_Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DI_Create_Date]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>DI_Create_Date</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DI_Modified_Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DI_Modified_Date]</local-name>
+            <parent-name>[factinventory_rejects]</parent-name>
+            <remote-alias>DI_Modified_Date</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InventorySK</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[InventorySK (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>InventorySK</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InventoryDateSK</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[InventoryDateSK (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>InventoryDateSK</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InventoryDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[InventoryDate (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>InventoryDate</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StoreSK</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[StoreSK (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>StoreSK</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductSK</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[ProductSK (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>ProductSK</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeographySK</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[GeographySK (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>GeographySK</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnHandQuantity</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[OnHandQuantity (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>OnHandQuantity</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OnOrderQuantity</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[OnOrderQuantity (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>OnOrderQuantity</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SafetyStockQuantity</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[SafetyStockQuantity (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>SafetyStockQuantity</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DaysInStock</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[DaysInStock (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>DaysInStock</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MinDayInStock</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[MinDayInStock (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>MinDayInStock</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaxDayInStock</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[MaxDayInStock (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>MaxDayInStock</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aging</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Aging (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>Aging</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOR_ID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[SOR_ID (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>SOR_ID</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOR_LoadDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[SOR_LoadDate (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>SOR_LoadDate</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOR_UpdateDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[SOR_UpdateDate (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>SOR_UpdateDate</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DI_Job_ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[DI_Job_ID (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>DI_Job_ID</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DI_Create_Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DI_Create_Date (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>DI_Create_Date</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DI_Modified_Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[DI_Modified_Date (factinventory)]</local-name>
+            <parent-name>[factinventory]</parent-name>
+            <remote-alias>DI_Modified_Date</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_TIMESTAMP&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_TIMESTAMP&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Brand ID' datatype='string' name='[Brand_ID]' role='dimension' type='nominal' />
+      <column caption='DI Create Date (factinventory)' datatype='datetime' name='[DI_Create_Date (factinventory)]' role='dimension' type='ordinal' />
+      <column caption='DI Create Date' datatype='datetime' name='[DI_Create_Date]' role='dimension' type='ordinal' />
+      <column caption='DI Job ID (factinventory)' datatype='string' name='[DI_Job_ID (factinventory)]' role='dimension' type='nominal' />
+      <column caption='DI Job ID' datatype='string' name='[DI_Job_ID]' role='dimension' type='nominal' />
+      <column caption='DI Modified Date (factinventory)' datatype='datetime' name='[DI_Modified_Date (factinventory)]' role='dimension' type='ordinal' />
+      <column caption='DI Modified Date' datatype='datetime' name='[DI_Modified_Date]' role='dimension' type='ordinal' />
+      <column caption='DI Reject Code' datatype='integer' name='[DI_Reject_Code]' role='dimension' type='ordinal' />
+      <column caption='Days In Stock' datatype='integer' name='[DaysInStock]' role='measure' type='quantitative' />
+      <column caption='Geography ID' datatype='integer' name='[GeographyID]' role='dimension' type='ordinal' />
+      <column caption='Geography SK' datatype='integer' name='[GeographySK]' role='measure' type='quantitative' />
+      <column caption='Inventory Date SK' datatype='integer' name='[InventoryDateSK]' role='measure' type='quantitative' />
+      <column caption='Inventory Date' datatype='date' name='[InventoryDate]' role='dimension' type='ordinal' />
+      <column caption='Inventory SK' datatype='integer' name='[InventorySK]' role='measure' type='quantitative' />
+      <column caption='Max Day In Stock' datatype='integer' name='[MaxDayInStock]' role='measure' type='quantitative' />
+      <column caption='Min Day In Stock' datatype='integer' name='[MinDayInStock]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='On Hand Quantity' datatype='integer' name='[OnHandQuantity]' role='measure' type='quantitative' />
+      <column caption='On Order Quantity' datatype='integer' name='[OnOrderQuantity]' role='measure' type='quantitative' />
+      <column caption='Product Label' datatype='string' name='[ProductLabel]' role='dimension' type='nominal' />
+      <column caption='Product SK' datatype='integer' name='[ProductSK]' role='measure' type='quantitative' />
+      <column caption='Product ID' datatype='string' name='[Product_ID]' role='dimension' type='nominal' />
+      <column caption='SOR ID (factinventory)' datatype='integer' name='[SOR_ID (factinventory)]' role='dimension' type='ordinal' />
+      <column caption='Sor Id' datatype='integer' name='[SOR_ID]' role='dimension' type='ordinal' />
+      <column caption='SOR LoadDate (factinventory)' datatype='datetime' name='[SOR_LoadDate (factinventory)]' role='dimension' type='ordinal' />
+      <column caption='SOR LoadDate' datatype='datetime' name='[SOR_LoadDate]' role='dimension' type='ordinal' />
+      <column caption='SOR UpdateDate (factinventory)' datatype='datetime' name='[SOR_UpdateDate (factinventory)]' role='dimension' type='ordinal' />
+      <column caption='SOR UpdateDate' datatype='datetime' name='[SOR_UpdateDate]' role='dimension' type='ordinal' />
+      <column caption='Safety Stock Quantity' datatype='integer' name='[SafetyStockQuantity]' role='measure' type='quantitative' />
+      <column caption='Store ID' datatype='integer' name='[StoreID]' role='dimension' type='ordinal' />
+      <column caption='Store SK' datatype='integer' name='[StoreSK]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.555725' measure-ordering='alphabetic' measure-percentage='0.444275' show-structure='true' user-set-layout='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='count'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759'>Count of Rejects from different sources</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='factinventory_rejects+ (retail_dw_test_2019_01)' name='federated.19q9zev0r2ngch1474e431fnhr4h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19q9zev0r2ngch1474e431fnhr4h'>
+            <column caption='Inventory SK' datatype='integer' name='[InventorySK]' role='measure' type='quantitative' />
+            <column caption='Sor Id' datatype='integer' name='[SOR_ID]' role='dimension' type='ordinal' />
+            <column-instance column='[InventorySK]' derivation='Count' name='[cnt:InventorySK:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SOR_ID]' derivation='None' name='[none:SOR_ID:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.19q9zev0r2ngch1474e431fnhr4h].[none:SOR_ID:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.19q9zev0r2ngch1474e431fnhr4h].[cnt:InventorySK:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19q9zev0r2ngch1474e431fnhr4h].[none:SOR_ID:ok]</rows>
+        <cols>[federated.19q9zev0r2ngch1474e431fnhr4h].[cnt:InventorySK:qk]</cols>
+      </table>
+      <simple-id uuid='{E45742CC-87D6-4C7F-ADD5-AAAEF6737CD7}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19q9zev0r2ngch1474e431fnhr4h].[none:SOR_ID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{505DCA4C-316E-406A-AA77-30AFC0098613}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='155' name='count' width='192'>
+      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
+      kwAIpf0/2hvY3hhzsT8AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
